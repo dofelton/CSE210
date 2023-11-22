@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+    ;
     }
 }
+// ChooseScripture()
+// loop accepting user input
+    if Enter is pressed continue
+    type quit to exit program
