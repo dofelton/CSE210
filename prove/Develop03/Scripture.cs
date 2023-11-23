@@ -1,15 +1,26 @@
 using System;
-string _reference =
-List _scripture or _words (holding the text of the scripture)
+using System.Reflection.Metadata.Ecma335;
+class Scripture
+{
+    public string _scripture;
+    public List<string> _scriptures = new List<string>() {"Adam fell that men might be; and men are. that they might have joy."};
+    public Scripture()
+    {
+        _scripture = ChooseScripture();
+    }
+    
+    
+
+    public string ChooseScripture()
+    {
+        return _scriptures[0];
+    }
+
+    public string DisplayScripture(string reference, List<string> scripture)
+    {
+        string script = string.Join( " ", scripture);
+        return $"{reference} - {script}";
+    }
 
 
-// ChooseScripture();
-    // random function to choose a scripture
-
-// DisplayScripture();
-    // call Word.DisplayReference()
-    // add text
-
-// HideWords(numberToHide: int) return void
-
-// Words.CompletelyHidden() : bool
+}
