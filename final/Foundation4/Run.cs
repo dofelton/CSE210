@@ -1,0 +1,1 @@
+// Inherite from Activity, attributes- distance
