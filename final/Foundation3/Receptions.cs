@@ -2,14 +2,16 @@
 
 class Receptions : Event
 {
-<<<<<<< HEAD
+    private string _type = "a Reception";
     private List<string> _reservations;
 
-    public Receptions(List<string> reserv) : base(title, description, date, time, address)
+    public Receptions(string title, string description, string date, string time, string address, string city, string state, string country) : base(title, description, date, time, address, city, state, country)
     {
         _reservations  = new List<string>();
     }
-=======
     
->>>>>>> 06c361c4c2ad45bd5aa275e32cb88e4d15f9a571
+    public override void DisplayFullDetails(string title, string description, string date, string time, string address, string type)
+    {
+        Console.WriteLine($"Full Details:\n{title}: {description}, {date}, {time}, {address}\nIt is {type} and you can RSVP at rsvp@hotmail.com.");
+    }
 }
